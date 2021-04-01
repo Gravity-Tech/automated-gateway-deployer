@@ -1,0 +1,9 @@
+package deployer
+
+
+
+
+
+func DeployOnWAVES() {
+
+}
