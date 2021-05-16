@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func DeployGatewayOnEVM(privKey string, portType deployer.PortType, commonCfg *cfg.CommonInputConfig, evmConfig *cfg.CrossChainTokenConfig) (*deployer.GatewayPort, error) {
+func DeployGatewayOnEVM(privKey string, portType deployer.PortType, commonCfg *cfg.CommonInputConfig, evmConfig *cfg.CrossChainTokenConfig) (*cfg.CrossChainDeploymentOutput, error) {
 	ctx, cancelCtx := context.WithCancel(context.Background())
 
 	defer cancelCtx()
@@ -62,5 +62,16 @@ func DeployGatewayOnEVM(privKey string, portType deployer.PortType, commonCfg *c
 		return nil, err
 	}
 
-	return port, nil
+	return &cfg.CrossChainDeploymentOutput{
+		Gravity: cfg.Account{
+			Address: gravityAddress,
+		},
+		Nebula: cfg.Account{
+			Address: port.NebulaAddress,
+		},
+		Port: cfg.Account{
+			Address: port.PortAddress,
+		},
+		Token: port.ERC20Address,
+	}, nil
 }

@@ -15,7 +15,7 @@ func init() {
 
 func main() {
 	_, err := deployer.Deploy(config)
-	
+
 	if err != nil {
 		fmt.Printf(err.Error())
 	}

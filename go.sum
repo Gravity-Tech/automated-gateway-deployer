@@ -42,8 +42,8 @@ github.com/Gravity-Tech/gateway v0.0.0-20210320192720-efe55fee02c7 h1:4mjWlf+2on
 github.com/Gravity-Tech/gateway v0.0.0-20210320192720-efe55fee02c7/go.mod h1:JmNcu4ZgdKWm/galwciLNOfWeApNF2HlKztP41FINSo=
 github.com/Gravity-Tech/gateway-deployer/ethereum v0.0.0-20210516170043-849647cf32c2 h1:rtJsNgmRpxqGLvRqEdHuXw/QAe79TokT95Xl8ssg6a4=
 github.com/Gravity-Tech/gateway-deployer/ethereum v0.0.0-20210516170043-849647cf32c2/go.mod h1:KYBgt68kD7jbEQfxoBnbCDklwR5J8mz+8///jDrsXBU=
-github.com/Gravity-Tech/gateway-deployer/waves v0.0.0-20210516170043-849647cf32c2 h1:QCA9J1hSqcLFe7dBd9KiJMXUO44BP2kZL6kXswQm6Iw=
-github.com/Gravity-Tech/gateway-deployer/waves v0.0.0-20210516170043-849647cf32c2/go.mod h1:139zzYec6WSotlpKD5omSbz4D/btMYSzMi4zQZJHb1w=
+github.com/Gravity-Tech/gateway-deployer/waves v0.0.0-20210516174623-5bbab3b4b3f4 h1:veLjwVJd0QDLGcREUUQmu3/jMKW/EJTYR1VFwun/RlM=
+github.com/Gravity-Tech/gateway-deployer/waves v0.0.0-20210516174623-5bbab3b4b3f4/go.mod h1:139zzYec6WSotlpKD5omSbz4D/btMYSzMi4zQZJHb1w=
 github.com/Gravity-Tech/gravity-core v1.0.2-0.20210406142321-b6e45813f6de h1:catuByyIY1q9xQHWOYx6KeetFlWy7sd3T5xxvUvHBA0=
 github.com/Gravity-Tech/gravity-core v1.0.2-0.20210406142321-b6e45813f6de/go.mod h1:ma7YzqHyxSj9x/HhkVStH6ArDPt+IGugOQBdPX/X584=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
@@ -397,10 +397,8 @@ github.com/klauspost/pgzip v1.0.2-0.20170402124221-0bf5dcad4ada/go.mod h1:Ch1tH6
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
 github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515/go.mod h1:+0opPa2QZZtGFBFZlji/RkVcI2GknAs/DXo4wKdlNEc=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
-github.com/kr/pretty v0.2.0 h1:s5hAObm+yFO5uHYt5dYjxi2rXrsnmRpJx4OYvIWUaQs=
 github.com/kr/pretty v0.2.0/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
-github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/leanovate/gopter v0.2.8/go.mod h1:gNcbPWNEWRe4lm+bycKqxUYoH5uoVje5SkOJ3uoLer8=
@@ -633,9 +631,8 @@ github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6Kllzaw
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/wavesplatform/go-lib-crypto v0.0.0-20190905125804-474f21517ad5 h1:7HzocTwiZ0mmXstSTsZ17nKwoETHG395x8/jwO8x/0c=
 github.com/wavesplatform/go-lib-crypto v0.0.0-20190905125804-474f21517ad5/go.mod h1:aWPotuovv3bWLbL8iqCoENX7a8UeyuRp++ok1b/K2sw=
+github.com/wavesplatform/gowaves v0.8.7 h1:7fpMwAJdST02b2oWu7wo81J3hmzcIho9n7025p2K9A4=
 github.com/wavesplatform/gowaves v0.8.7/go.mod h1:SY+zQi6ZE8ebHhNRnn3z2EgotMSyeDRQ1CLyN5KPFc4=
-github.com/wavesplatform/gowaves v0.8.8 h1:StqNB5NwScvuchjBj5jygnnu6r/Ikj1XVdNqrSHZhz8=
-github.com/wavesplatform/gowaves v0.8.8/go.mod h1:SY+zQi6ZE8ebHhNRnn3z2EgotMSyeDRQ1CLyN5KPFc4=
 github.com/willf/bitset v1.1.3/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPySAYV4=
 github.com/wsddn/go-ecdh v0.0.0-20161211032359-48726bab9208/go.mod h1:IotVbo4F+mw0EzQ08zFqg7pK3FebNXpaMsRy2RT+Ees=
 github.com/x448/float16 v0.8.4/go.mod h1:14CWIYCyZA/cWjXOioeEpHeN/83MdbZDRQHoFcYsOfg=
@@ -925,7 +922,6 @@ google.golang.org/protobuf v1.25.0/go.mod h1:9JNX74DMeImyA3h4bdi1ymwjUzf21/xIlba
 gopkg.in/alecthomas/kingpin.v2 v2.2.6/go.mod h1:FMv+mEhP44yOT+4EoQTLFTRgOQ1FBLkstjWtayDeSgw=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
-gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 h1:YR8cESwS4TdDjEe65xsg0ogRM/Nc3DYOhEAlW+xobZo=
 gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/cheggaaa/pb.v1 v1.0.25/go.mod h1:V/YB90LKu/1FcN3WVnfiiE5oMCibMjukxqG/qStrOgw=
 gopkg.in/errgo.v2 v2.1.0/go.mod h1:hNsd1EY+bozCKY1Ytp96fpM3vjJbqLJn88ws8XvfDNI=

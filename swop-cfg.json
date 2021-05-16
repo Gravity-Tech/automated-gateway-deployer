@@ -2,7 +2,10 @@
   "OriginToken": {
     "AssetID": "Ehie5xYpeN8op1Cctc6aGUrqx8jq3jtf1DSjXDbfm7aT",
     "NodeURL": "https://nodes.swop.fi",
-    "ChainType": "waves"
+    "ChainType": "waves",
+    "Miscellaneous": {
+      "nebula"
+    }
   },
   "DestToken": {
     "AssetID": "0xd6003e4e43c556dc92f9efba9eed0e0bbd5db29b",

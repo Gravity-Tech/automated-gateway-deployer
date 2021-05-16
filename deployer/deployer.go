@@ -36,25 +36,18 @@ func Deploy(configPath string) (*cfg.Output, error) {
 	}
 
 	evmConfig := deploymentConfig.DestToken
+	wavesConfig := deploymentConfig.OriginToken
 
-	port, err := DeployGatewayOnEVM(os.Getenv(DestinationDeployer), deployer.IBPort, &deploymentConfig.CommonInputConfig, &evmConfig)
+	evmPort, err := DeployGatewayOnEVM(os.Getenv(DestinationDeployer), deployer.IBPort, &deploymentConfig.CommonInputConfig, &evmConfig)
 
 	if err != nil {
 		return nil, err
 	}
 
-	deploymentResult.Destination = cfg.CrossChainDeploymentOutput{
-		Gravity: cfg.Account{
-			Address: evmConfig.GravityAddress,
-		},
-		Nebula: cfg.Account{
-			Address: port.NebulaAddress,
-		},
-		Port: cfg.Account{
-			Address: port.PortAddress,
-		},
-		Token: port.ERC20Address,
-	}
+	wavesPort, err := DeployGatewayOnWaves(os.Getenv(OriginDeployer), deployer.LUPort, &deploymentConfig.CommonInputConfig, &wavesConfig)
+
+	deploymentResult.Destination = *evmPort
+	deploymentResult.Origin = *wavesPort
 
 	return deploymentResult, nil
 }

@@ -12,6 +12,8 @@ type CrossChainTokenConfig struct {
 	GravityAddress string
 	ChainType      string
 	ConsulsList  []string
+	NebulaScriptPath string
+	SubscriberScriptPath string
 }
 
 func (tokenCfg CrossChainTokenConfig) Validate() error {
