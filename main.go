@@ -6,7 +6,6 @@ import (
 	"github.com/Gravity-Tech/automated-gateway-deployer/deployer"
 )
 
-
 var config string
 
 func init() {
@@ -15,8 +14,8 @@ func init() {
 }
 
 func main() {
-	err := deployer.Deploy(config)
-
+	_, err := deployer.Deploy(config)
+	
 	if err != nil {
 		fmt.Printf(err.Error())
 	}

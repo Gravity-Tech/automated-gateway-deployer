@@ -3,12 +3,10 @@ package deployer
 import (
 	cfg "github.com/Gravity-Tech/automated-gateway-deployer/config"
 	"github.com/Gravity-Tech/gateway-deployer/ethereum/deployer"
-	"github.com/Gravity-Tech/gateway-deployer/waves/contracts"
+
 	"github.com/Gravity-Tech/gravity-core/common/helpers"
-	"github.com/wavesplatform/gowaves/pkg/proto"
+
 	"context"
-	"flag"
-	"fmt"
 	"os"
 	"time"
 
@@ -16,13 +14,11 @@ import (
 
 	"github.com/Gravity-Tech/gateway-deployer/waves/contracts"
 	wavesdeployer "github.com/Gravity-Tech/gateway-deployer/waves/deployer"
-	waves "github.com/Gravity-Tech/gateway-deployer/waves"
 
 	"github.com/wavesplatform/gowaves/pkg/proto"
 
 	"github.com/wavesplatform/gowaves/pkg/crypto"
 
-	"github.com/Gravity-Tech/gravity-core/common/helpers"
 	wavesClient "github.com/wavesplatform/gowaves/pkg/client"
 )
 
