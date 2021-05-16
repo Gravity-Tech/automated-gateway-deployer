@@ -17,3 +17,5 @@
 ./output/*.json
 
 .idea/
+
+result.json

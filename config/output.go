@@ -13,7 +13,4 @@ type CrossChainDeploymentOutput struct {
 type Output struct {
 	Bft int
 	Origin, Destination CrossChainDeploymentOutput
-
-	//ExtractorConfig
-	//NebulaeConfig
 }

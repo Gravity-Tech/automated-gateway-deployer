@@ -7,7 +7,6 @@ import (
 	"github.com/Gravity-Tech/gravity-core/common/helpers"
 
 	"context"
-	"os"
 	"time"
 
 	wavesCrypto "github.com/wavesplatform/go-lib-crypto"
@@ -58,18 +57,18 @@ func DeployGatewayOnWaves(privKey string, portType deployer.PortType, commonCfg 
 		return nil, err
 	}
 
-	nebulaScript, err := wavesHelper.ScriptFromFile(cfg.NebulaScriptFile)
+	nebulaScript, err := wavesHelper.ScriptFromFile(chainConfig.NebulaScriptPath)
 	if err != nil {
 		return nil, err
 	}
 
-	subScript, err := wavesHelper.ScriptFromFile(cfg.SubMockScriptFile)
+	subScript, err := wavesHelper.ScriptFromFile(chainConfig.SubscriberScriptPath)
 	if err != nil {
 		return nil, err
 	}
 
 	wCrypto := wavesCrypto.NewWavesCrypto()
-	distributorPrivKey := os.Getenv("DEPLOYER_PRIV_KEY")
+	distributorPrivKey := privKey
 	distributionSeed, err := crypto.NewSecretKeyFromBase58(string(wCrypto.PrivateKey(wavesCrypto.Seed(distributorPrivKey))))
 	if err != nil {
 		return nil, err

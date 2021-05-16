@@ -39,12 +39,14 @@ func Deploy(configPath string) (*cfg.Output, error) {
 	wavesConfig := deploymentConfig.OriginToken
 
 	evmPort, err := DeployGatewayOnEVM(os.Getenv(DestinationDeployer), deployer.IBPort, &deploymentConfig.CommonInputConfig, &evmConfig)
-
 	if err != nil {
 		return nil, err
 	}
 
 	wavesPort, err := DeployGatewayOnWaves(os.Getenv(OriginDeployer), deployer.LUPort, &deploymentConfig.CommonInputConfig, &wavesConfig)
+	if err != nil {
+		return nil, err
+	}
 
 	deploymentResult.Destination = *evmPort
 	deploymentResult.Origin = *wavesPort

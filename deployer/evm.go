@@ -16,7 +16,7 @@ func DeployGatewayOnEVM(privKey string, portType deployer.PortType, commonCfg *c
 
 	defer cancelCtx()
 
-	fmt.Println("Deploy ethereum contracts")
+	fmt.Println("Deploy Ethereum contracts")
 	fmt.Printf("Node url: %s\n", evmConfig.NodeURL)
 
 	ethClient, err := ethclient.DialContext(ctx, evmConfig.NodeURL)
