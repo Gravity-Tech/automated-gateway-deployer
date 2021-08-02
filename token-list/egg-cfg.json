@@ -1,0 +1,21 @@
+{
+  "Bft": 3,
+  "OriginToken": {
+    "AssetID": "JCGDtrVy64cCJ1wCKfCaiNQMnyYwii71TbE5QeAHfxgF",
+    "NodeURL": "https://nodes.swop.fi",
+    "GravityAddress": "3PLpMu2cAg618e7xXYHtckFJjFZksPFHoLm",
+    "ChainType": "waves",
+    "ConsulsList": ["3PGKQ5qgZDFUANct9MCgWEVhxK36EmFNPRi", "3P2BpkELsp7CnTGrPdgq1L1nogpD4JaEX69", "3PMHm2VLtf2pKoHbgpMB3KQDd5ki3bXLRWW"],
+    "Miscellaneous": {
+      "NebulaScriptPath": "./core/contracts/waves/nebula.ride",
+      "SubscriberScriptPath": "./gateway/contracts/waves/ibport.ride"
+    }
+  },
+  "DestToken": {
+    "AssetID": "0xd6003e4e43c556dc92f9efba9eed0e0bbd5db29b",
+    "NodeURL": "https://rpcapi.fantom.network",
+    "GravityAddress": "0xB883418014e73228F1Ec470714802c59bB49f1eC",
+    "ChainType": "ftm",
+    "ConsulsList": ["0xd13a6cd149336a323f925fd5b660e322e048558e", "0x6ac9bd01c19abff57119e859652d4a2a5e4f9217", "0x977fa57a02cc421e26099a4f499605cb7dd853d2"]
+  }
+}

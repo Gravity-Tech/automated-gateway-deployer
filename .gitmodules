@@ -1,0 +1,6 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/Gravity-Tech/gravity-core
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/Gravity-Tech/gateway
